@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academlo store</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./src/assets/logo_blanco.png" type="image/x-icon">
+  <!-- meta, tarea para el grupo -->
+
+  <!-- font family  -->
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./src/primary-styles/reset.css">
+  <link rel="stylesheet" href="./src/components/nav/nav.css">
+  <link rel="stylesheet" href="./src/components/header/header.css">
+  <link rel="stylesheet" href="./src/primary-styles/body.css">
+  <link rel="stylesheet" href="./src/primary-styles/articleApi.css">
+  <link rel="stylesheet" href="./src/components/ulApi/ulApi.css">
+
+</head>
+
+<body class="body" id="home">
+  <nav id="nav" class="body__nav nav">
+    <!-- Aqui insertamos el nav -->
+  </nav>
+
+  <main class="body__main main">
+    <header id="header" class="main__header header">
+      <!-- Aqui insertamos el header -->
+    </header>
+
+    <section class="main__section section">
+
+      <article class="section__article--api article">
+        <ul class="article__menu">
+          <li><h2 class="article__h2">Todos nuestros productos</h2></li>
+          <li>
+              <select name="select" class="article__select">
+                  <option value="todos" selected>Todos</option>
+                  
+                </select>
+          </li>
+      </ul>
+
+        <ul id="ul__api" class="article__ul ">
+          <!-- aca va el contenido de la API -->
+          <li id="li_img">
+            <img src="./src/assets/loading.gif" alt="Cargando" class="article__img">
+        </li>
+        </ul>
+
+      </article>
+
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
